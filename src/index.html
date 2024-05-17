@@ -10,19 +10,23 @@
 
   <body>
     <section>
-      <h1>Search images form</h1>
+      <div class="heading">
+        <h1>Search images form</h1>
 
-      <form id="search-form">
-        <input
-          id="search-input"
-          type="text"
-          name="query"
-          placeholder="Search images"
-        />
-        <button class="btn" type="submit">Search</button>
-      </form>
+        <form id="search-form">
+          <input
+            id="search-input"
+            type="text"
+            name="query"
+            placeholder="Search images"
+          />
+          <button class="btn" type="submit">Search</button>
+        </form>
+      </div>
 
-      <div class="loading"></div>
+      <div class="loading" id="loading-indicator">
+        <span class="loader"></span>
+      </div>
 
       <ul id="results" class="gallery"></ul>
     </section>

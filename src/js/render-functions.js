@@ -16,6 +16,14 @@ export const renderGallery = hits => {
     .join('');
 };
 
+export const showElement = element => {
+  element.style.display = 'block';
+};
+
+export const hideElement = element => {
+  element.style.display = 'none';
+};
+
 // results.insertAdjacentHTML('beforeend', markup);
 // const lightbox = new SimpleLightbox('.gallery a', {
 //   captionsData: 'alt',
